@@ -2,7 +2,7 @@
 <!-- Ata Hero online update feed. AutoUpdater reads this on every launch.
      Each release: bump <version> and point <url> at the new setup exe. -->
 <item>
-  <version>1.0.1.0</version>
+  <version>1.0.0.0</version>
   <url>https://github.com/nashryle/AtaHero/releases/download/v1.0.1/AtaHeroSetup-1.0.1.exe</url>
   <changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.1</changelog>
   <mandatory mode="0">false</mandatory>
