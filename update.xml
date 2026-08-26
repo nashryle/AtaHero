@@ -3,8 +3,8 @@
      Each release: bump <version> and point <url> at the new setup exe.
      <version> must be > the installed AssemblyVersion to trigger an update. -->
 <item>
-<version>1.0.4.0</version>
-<url>https://github.com/nashryle/AtaHero/releases/download/v1.0.4/AtaHeroSetup-1.0.4.exe</url>
-<changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.4</changelog>
+<version>1.0.5.0</version>
+<url>https://github.com/nashryle/AtaHero/releases/download/v1.0.5/AtaHeroSetup-1.0.5.exe</url>
+<changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.5</changelog>
   <mandatory mode="0">false</mandatory>
 </item>
