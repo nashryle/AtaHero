@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Ata Hero online update feed. AutoUpdater reads this on every launch.
+<!-- Ata Hero online update feed. UpdateService reads this on every launch.
      Each release: bump <version> and point <url> at the new setup exe.
-     <version> must be > the installed AssemblyVersion to trigger an update. -->
+     <version> must be > the installed AssemblyVersion to trigger an update.
+
+     !! THE TAG IS CASE-SENSITIVE !!
+     GitHub release URLs use the TAG, not the release title, and the tag is
+     matched exactly. The tag on GitHub is "V1.0.10" with a CAPITAL V, so
+     ".../download/v1.0.10/..." returns 404 and the app reports "Couldn't
+     reach the update server". Copy the tag from the release page rather than
+     typing it. -->
 <item>
-<version>1.0.10.0</version>
-<url>https://github.com/nashryle/AtaHero/releases/download/v1.0.10/AtaHeroSetup-1.0.10.exe</url>
-<changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.10</changelog>
+  <version>1.0.10.0</version>
+  <url>https://github.com/nashryle/AtaHero/releases/download/V1.0.10/AtaHeroSetup-1.0.10.exe</url>
+  <changelog>https://github.com/nashryle/AtaHero/releases/tag/V1.0.10</changelog>
   <mandatory mode="0">false</mandatory>
 </item>
