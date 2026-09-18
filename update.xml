@@ -6,12 +6,12 @@
      !! THE TAG IS CASE-SENSITIVE !!
      GitHub release URLs use the TAG, not the release title, and the tag is
      matched exactly. The tag on GitHub is "V1.0.10" with a CAPITAL V, so
-     ".../download/v1.0.10/..." returns 404 and the app reports "Couldn't
+     ".../download/v1.0.11/..." returns 404 and the app reports "Couldn't
      reach the update server". Copy the tag from the release page rather than
      typing it. -->
 <item>
-  <version>1.0.10.0</version>
-  <url>https://github.com/nashryle/AtaHero/releases/download/V1.0.10/AtaHeroSetup-1.0.10.exe</url>
-  <changelog>https://github.com/nashryle/AtaHero/releases/tag/V1.0.10</changelog>
+  <version>1.0.11.0</version>
+  <url>https://github.com/nashryle/AtaHero/releases/download/V1.0.11/AtaHeroSetup-1.0.11.exe</url>
+  <changelog>https://github.com/nashryle/AtaHero/releases/tag/V1.0.11</changelog>
   <mandatory mode="0">false</mandatory>
 </item>
