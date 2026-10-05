@@ -3,15 +3,19 @@
      Each release: bump <version> and point <url> at the new setup exe.
      <version> must be > the installed AssemblyVersion to trigger an update.
 
-     !! THE TAG IS CASE-SENSITIVE !!
-     GitHub release URLs use the TAG, not the release title, and the tag is
-     matched exactly. The tag on GitHub is "V1.0.16" with a CAPITAL V, so
-     ".../download/v1.0.16/..." returns 404 and the app reports "Couldn't
-     reach the update server". Copy the tag from the release page rather than
-     typing it. -->
+     !! THE TAG IS CASE-SENSITIVE — COPY IT FROM THE RELEASE PAGE !!
+     GitHub download URLs use the TAG, matched exactly, not the release title.
+     Get it wrong and the app says "This version's installer isn't on the
+     download page yet" — the client HEAD-checks the URL before offering the
+     download, so a bad tag looks like a missing installer.
+
+     5 Oct 2026: this note previously claimed the tag was "V1.0.16" with a
+     capital V. It is NOT. The v1.0.16 tag is lowercase, the feed was written
+     to match the comment rather than the release page, and 1.0.16 could not
+     be downloaded by anyone. Check the page, not this comment. -->
 <item>
   <version>1.0.16.0</version>
-  <url>https://github.com/nashryle/AtaHero/releases/download/V1.0.16/AtaHeroSetup-1.0.16.exe</url>
-  <changelog>https://github.com/nashryle/AtaHero/releases/tag/V1.0.16</changelog>
+  <url>https://github.com/nashryle/AtaHero/releases/download/v1.0.16/AtaHeroSetup-1.0.16.exe</url>
+  <changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.16</changelog>
   <mandatory mode="0">false</mandatory>
 </item>
