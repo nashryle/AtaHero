@@ -12,10 +12,17 @@
      5 Oct 2026: this note previously claimed the tag was "V1.0.17" with a
      capital V. It is NOT. The v1.0.17 tag is lowercase, the feed was written
      to match the comment rather than the release page, and 1.0.17 could not
-     be downloaded by anyone. Check the page, not this comment. -->
+     be downloaded by anyone. Check the page, not this comment.
+
+     <game> — the download-page game. OPTIONAL. Leave it out and the version
+     number picks one by rotation; 1.0.17 had no tag and so played
+     odd-one-out. Named here from 18 Oct 2026 so the feed says what plays
+     rather than leaving it to be worked out. Slugs are in
+     AppUpdate\Games\UpdateGame.cs. An unknown name is ignored and rotates. -->
 <item>
   <version>1.0.17.0</version>
   <url>https://github.com/nashryle/AtaHero/releases/download/v1.0.17/AtaHeroSetup-1.0.17.exe</url>
   <changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.17</changelog>
   <mandatory mode="0">false</mandatory>
+  <game>quick-maths</game>
 </item>
