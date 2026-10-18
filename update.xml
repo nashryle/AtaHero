@@ -15,14 +15,25 @@
      be downloaded by anyone. Check the page, not this comment.
 
      <game> — the download-page game. OPTIONAL. Leave it out and the version
-     number picks one by rotation; 1.0.17 had no tag and so played
-     odd-one-out. Named here from 18 Oct 2026 so the feed says what plays
-     rather than leaving it to be worked out. Slugs are in
-     AppUpdate\Games\UpdateGame.cs. An unknown name is ignored and rotates. -->
+     number picks one by rotation. Slugs are in AppUpdate\Games\UpdateGame.cs;
+     an unknown name is ignored and rotates instead.
+
+     18 Oct 2026: the game is now CHOSEN BY HAND, walking the list top to
+     bottom, rather than left to the version rotation. Steady hand was skipped
+     for having had a long run. Order from here: hangman (1.0.18), memory,
+     reaction, scramble, simon, higher-lower, odd-one-out, quick-maths, xo,
+     riddles, fill-in, movies, then steady-hand comes back round.
+
+     !! ONCE PINNED BY HAND, KEEP PINNING. The rotation is no longer in step.
+     Forget the tag on 1.0.19 and it jumps to xo (10019 % 13 = 9), not memory.
+
+     The game is read from the feed at download time by the client the person
+     is CURRENTLY running, so this line can be changed any time without a
+     rebuild — and it changes what 1.0.18's download page plays, not 1.0.19's. -->
 <item>
-  <version>1.0.17.0</version>
-  <url>https://github.com/nashryle/AtaHero/releases/download/v1.0.17/AtaHeroSetup-1.0.17.exe</url>
-  <changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.17</changelog>
+  <version>1.0.18.0</version>
+  <url>https://github.com/nashryle/AtaHero/releases/download/v1.0.18/AtaHeroSetup-1.0.18.exe</url>
+  <changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.18</changelog>
   <mandatory mode="0">false</mandatory>
-  <game>quick-maths</game>
+  <game>hangman</game>
 </item>
