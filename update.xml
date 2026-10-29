@@ -38,9 +38,9 @@
      is CURRENTLY running, so this line can be changed any time without a
      rebuild — and it changes what 1.0.18's download page plays. -->
 <item>
-  <version>1.0.18.0</version>
-  <url>https://github.com/nashryle/AtaHero/releases/download/v.1.0.18/AtaHeroSetup-1.0.18.exe</url>
-  <changelog>https://github.com/nashryle/AtaHero/releases/tag/v.1.0.18</changelog>
+  <version>1.0.19.0</version>
+  <url>https://github.com/nashryle/AtaHero/releases/download/v.1.0.19/AtaHeroSetup-1.0.19.exe</url>
+  <changelog>https://github.com/nashryle/AtaHero/releases/tag/v.1.0.19</changelog>
   <mandatory mode="0">false</mandatory>
-  <game>hangman</game>
+  <game>memory</game>
 </item>
