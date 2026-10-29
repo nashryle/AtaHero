@@ -9,10 +9,12 @@
      client HEAD-checks the URL before offering the download, so a bad tag
      looks like a missing installer.
 
-     TAGS SO FAR, because they are not consistent and guessing has failed twice:
+     TAGS SO FAR, because they are not consistent and guessing has failed three
+     times:
          1.0.16  V1.0.16   capital V
          1.0.17  v1.0.17   lowercase
          1.0.18  v.1.0.18  lowercase, WITH A DOT AFTER THE v
+         1.0.19  v1.0.19   lowercase, NO DOT
 
      5 Oct 2026: this note once claimed 1.0.17's tag was "V1.0.17". It was not,
      the feed was written to match the comment instead of the release page, and
@@ -20,6 +22,9 @@
      18 Oct 2026: 1.0.18 was tagged "v.1.0.18" while the release TITLE reads
      "v1.0.18". The title is decoration; the tag is the URL. Open the release
      page and read the tag chip — do not copy it from here.
+     29 Oct 2026: 1.0.19 was first published here as "v.1.0.19", copying
+     1.0.18's shape. The chip reads "v1.0.19", no dot. Four releases, three
+     shapes — there is no pattern to infer. Read the chip every time.
 
      <game> — the download-page game. OPTIONAL. Leave it out and the version
      number picks one by rotation. Slugs are in AppUpdate\Games\UpdateGame.cs;
@@ -27,20 +32,22 @@
 
      18 Oct 2026: the game is now CHOSEN BY HAND, walking the list top to
      bottom, rather than left to the version rotation. Steady hand was skipped
-     for having had a long run. Order from here: hangman (1.0.18), memory,
-     reaction, scramble, simon, higher-lower, odd-one-out, quick-maths, xo,
-     riddles, fill-in, movies, then steady-hand comes back round.
+     for having had a long run. Order from here: hangman (1.0.18),
+     memory (1.0.19), reaction, scramble, simon, higher-lower, odd-one-out,
+     quick-maths, xo, riddles, fill-in, movies, then steady-hand comes back
+     round.
 
      !! ONCE PINNED BY HAND, KEEP PINNING. The rotation is no longer in step.
-     Forget the tag on 1.0.19 and it jumps to xo (10019 % 13 = 9), not memory.
+     Forget the tag on 1.0.20 and it jumps to quick-maths (10020 % 13 = 8),
+     not reaction.
 
      The game is read from the feed at download time by the client the person
      is CURRENTLY running, so this line can be changed any time without a
-     rebuild — and it changes what 1.0.18's download page plays. -->
+     rebuild — and it changes what 1.0.19's download page plays. -->
 <item>
-  <version>1.0.18.0</version>
-  <url>https://github.com/nashryle/AtaHero/releases/download/v.1.0.18/AtaHeroSetup-1.0.18.exe</url>
-  <changelog>https://github.com/nashryle/AtaHero/releases/tag/v.1.0.18</changelog>
+  <version>1.0.19.0</version>
+  <url>https://github.com/nashryle/AtaHero/releases/download/v1.0.19/AtaHeroSetup-1.0.19.exe</url>
+  <changelog>https://github.com/nashryle/AtaHero/releases/tag/v1.0.19</changelog>
   <mandatory mode="0">false</mandatory>
-  <game>hangman</game>
+  <game>memory</game>
 </item>
